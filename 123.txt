@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 qqqqqq
+=======
+skafkqqqqqq
+>>>>>>> delete something for test
