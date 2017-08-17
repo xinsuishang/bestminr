@@ -1,0 +1,7 @@
+uwsgi
+django 1.8
+git
+virtualenv
+nginx
+zshrc
+vim配置
