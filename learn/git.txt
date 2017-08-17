@@ -20,3 +20,9 @@ git push 省略了远程主分支和本地主分支
 git clone git@server:path/name.git 克隆远程库
 git pull --rebase origin master  合并远程库到本地
 git pull 同上
+git branch  查看分支
+git branch [name] 创建分支
+git checkout [name] 切换分支
+git checkout -b [name]  创建新分支并切换
+git merge [name] 合并分支到当前分支
+git branch -d [name] 删除分支
