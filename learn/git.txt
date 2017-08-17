@@ -16,5 +16,6 @@ git reset --hard HEAD^  回滚到上一个版本  HEAD~100 上100个版本
 git remote add origin git@server:path/name.git
 关联远程库  server为服务器名 path为路径 name为远程库名
 git push -u origin master    将本地内容推送(-u 为全部推送 以后每次提交可以去掉，只推送每次更改)
+git push 省略了远程主分支和本地主分支
 git clone git@server:path/name.git 克隆远程库
 git pull --rebase origin master  合并远程库到本地
