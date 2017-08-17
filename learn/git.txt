@@ -7,6 +7,7 @@ git add [filename]  添加到存储区，准备提交
 git commit -m [filename] "注释"   提交
 
 git log   包含目前版本到修改日志(注释 时间 版本哈希 修改人) 可以带文件名字用以指定查看 
+  --pretty=oneline 在一行显示
 git reflog 只包含版本哈希和注释 但是包含了所有的版本(回滚也包含) 可以带文件名字用以指定查看
 
 git status 查看状态(储存区 提交)
