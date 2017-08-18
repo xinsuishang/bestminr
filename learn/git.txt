@@ -3,6 +3,8 @@ cd       进入目录
 git init 把当前目录加入到git
 
 git diff [filename] 查看修改内容
+git diff --cached   查看暂存区和版本库到差异
+git diff --staged    同上
 git add [filename]  添加到存储区，准备提交
 git commit -m [filename] "注释"   提交
 
