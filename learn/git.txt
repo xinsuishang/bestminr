@@ -19,8 +19,8 @@ git remote add origin git@server:path/name.git
 git push -u origin master    将本地内容推送(-u 为全部推送 以后每次提交可以去掉，只推送每次更改)
 git push 省略了远程主分支和本地主分支
 git clone git@server:path/name.git 克隆远程库
-git pull --rebase origin master  合并远程库到本地
-git pull 同上
+git pull --rebase origin master  合并远程库到本地 冲突时合并代码
+git pull 同上 
 git branch  查看分支
 git branch [name] 创建分支
 git checkout [name] 切换分支
