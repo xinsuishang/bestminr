@@ -1,4 +1,6 @@
 nginx -t  获取配置文件目录
 nginx     启动
-nginx -s stop  退出(立即)
-nginx -s quit  退出(执行完已收到命令)
+nginx -s stop   退出(立即)
+nginx -s quit   退出(执行完已收到命令)
+nginx -s reload 重载配置文件
+nginx -s reopen 重启nginx
