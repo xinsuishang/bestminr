@@ -27,3 +27,9 @@ git checkout [name] 切换分支
 git checkout -b [name]  创建新分支并切换
 git merge [name] 合并分支到当前分支
 git branch -d [name] 删除分支
+git stash 暂时隐藏此次工作
+git stash list 查看stash列表
+git stash apply stash@\{0\}   指定切换到编号为0的stash
+git stash drop stash@\{0\}    指定删除编号为0的stash
+git stash pop stash@\{0|}     切换到编号为0的stash继续工作并删除此stash
+如果不指定stash编号 从0开始
