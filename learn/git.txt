@@ -4,6 +4,7 @@ mkdir    创建目录
 cd       进入目录
 git init 把当前目录加入到git
 
+
 git diff [filename] 查看修改内容
 git diff --cached   查看暂存区和版本库到差异
 git diff --staged    同上
@@ -14,7 +15,7 @@ git log   包含目前版本到修改日志(注释 时间 版本哈希 修改人
   --pretty=oneline 在一行显示
 git reflog 只包含版本哈希和注释 但是包含了所有的版本(回滚也包含) 可以带文件名字用以指定查看
 
-git status 查看状态(储存区 提交)
+git status 查看状态(储存区 提交)    gst
 git reset --hard HEAD^  回滚到上一个版本  HEAD~100 上100个版本
                  版本号 状态更新到  这个版本号指定的版本
 git reset 可用于git add 之后的撤销操作
@@ -29,7 +30,7 @@ git pull --rebase origin master  合并远程库到本地 冲突时合并代码
 git pull 同上 
 git branch  查看分支
 git branch [name] 创建分支
-git checkout [name] 切换分支
+git checkout [name] 切换分支  gco
 git checkout -b [name]  创建新分支并切换
 git merge [name] 合并分支到当前分支
 git branch -d [name] 删除分支
