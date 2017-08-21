@@ -1,7 +1,12 @@
-uwsgi
-django 1.8
+uwsgi   uwsgi.ini
+nginx   location
+django 1.8.13
 git
 virtualenv
-nginx
 zshrc
 vim配置
+git diff
+git status      gst
+git checkout    gco
+
+
