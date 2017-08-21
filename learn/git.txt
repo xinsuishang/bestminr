@@ -1,3 +1,5 @@
+git config --global user.name ""
+git config --global user.email 12344562@132.com
 mkdir    创建目录
 cd       进入目录
 git init 把当前目录加入到git
