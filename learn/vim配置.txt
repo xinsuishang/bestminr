@@ -1,0 +1,18 @@
+curl -O https://raw.githubusercontent.com/vince67/v7_config/master/vim.sh
+bash vim.sh
+
+
+map <F5> :w<CR> :call RunPython()<CR>
+function RunPython()
+  exec "w"
+  if &filetype =='python'
+    exec "!time python %"
+  endif
+endfunction
+map <F6> :w<CR> :call RunPython3()<CR>
+function RunPython3()
+  exec "w"
+  if &filetype =='python'
+    exec "!time python3 %"
+  endif
+endfunction
