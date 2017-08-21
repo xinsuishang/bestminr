@@ -52,3 +52,4 @@ ZZ  直接离开(未保存会自动保存)
 :r [filename]  读取文件内容到光标所在行之后
 :n1,n2 w [filename] 将n1到n2的内容存储到[filename]文件中
 
+批量注释  ctrl+v   选中要注释的行首  (shift i) 插入注释符 再按两下esc
