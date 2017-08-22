@@ -26,6 +26,7 @@ git remote add origin git@server:path/name.git
 git push -u origin master    将本地内容推送(-u 为指定默认主机并关联 以便于以后推送和拉取时简化命令)
 git push --all origin 推送所有分支到远程主机
 git push 省略了远程主分支和本地主分支
+git push --delete origin [name] 删除远程分支
 git clone git@server:path/name.git 克隆远程库
 git pull --rebase origin master  合并远程库到本地 冲突时合并代码
 git pull 同上 
@@ -33,14 +34,14 @@ git fetch   pull = getch + merge
 git merge
 git branch  查看分支
 git branch [name] 创建分支
+git branch -d [name] 删除分支
+git branch -d -r [name] 删除远程分支
+git branch -m 123 234 重命名本地123分支为234
 git checkout [name] 切换分支  gco
 git checkout -b [name]  创建新分支并切换
 git checkout -b [name]      name2
                 新分支名    远程分支名
 git merge [name] 合并分支到当前分支
-git branch -d [name] 删除分支
-git branch -d -r [name] 删除远程分支
-git branch -m 123 234 重命名本地123分支为234
 git stash 暂时隐藏此次工作
 git stash list 查看stash列表
 git stash apply stash@\{0\}   指定切换到编号为0的stash
