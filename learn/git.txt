@@ -4,22 +4,18 @@ mkdir    创建目录
 cd       进入目录
 git init 把当前目录加入到git
 git init --bare test.git 建造一个裸库
-git remote add origin /123/456/789.git  关联远程库
-git clone /123/456/789.git    克隆远程库
-git push origin        master
-         远程主机名    远程分支名
 
 git diff [filename] 查看修改内容
-git diff --cached   查看暂存区和版本库到差异
+git diff --cached   查看暂存区和版本库的差异
 git diff --staged    同上
-git add [filename]  添加到存储区，准备提交
+git add [filename]  添加到暂存区，准备提交
 git commit -m [filename] "注释"   提交
 
 git log   包含目前版本到修改日志(注释 时间 版本哈希 修改人) 可以带文件名字用以指定查看 
   --pretty=oneline 在一行显示
 git reflog 只包含版本哈希和注释 但是包含了所有的版本(回滚也包含) 可以带文件名字用以指定查看
 
-git status 查看状态(储存区 提交)    gst
+git status 查看状态(暂存区 提交)    gst
 git reset --hard HEAD^  回滚到上一个版本  HEAD~100 上100个版本
                  版本号 状态更新到  这个版本号指定的版本
 git reset 可用于git add 之后的撤销操作
@@ -32,6 +28,8 @@ git push 省略了远程主分支和本地主分支
 git clone git@server:path/name.git 克隆远程库
 git pull --rebase origin master  合并远程库到本地 冲突时合并代码
 git pull 同上 
+git fetch   pull = getch + merge
+git merge
 git branch  查看分支
 git branch [name] 创建分支
 git checkout [name] 切换分支  gco
