@@ -4,7 +4,10 @@ mkdir    创建目录
 cd       进入目录
 git init 把当前目录加入到git
 git init --bare test.git 建造一个裸库
-
+git remote add origin /123/456/789.git  关联远程库
+git clone /123/456/789.git    克隆远程库
+git push origin        master
+         远程主机名    远程分支名
 
 git diff [filename] 查看修改内容
 git diff --cached   查看暂存区和版本库到差异
