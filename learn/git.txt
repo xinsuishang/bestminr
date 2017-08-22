@@ -3,7 +3,7 @@ git config --global user.email 12344562@132.com
 mkdir    创建目录
 cd       进入目录
 git init 把当前目录加入到git
-git init --bare test.git 建造一个裸库
+git init --bare test.git 直接建造一个裸库
 
 git diff [filename] 查看修改内容
 git diff --cached   查看暂存区和版本库的差异
