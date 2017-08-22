@@ -13,7 +13,6 @@ git commit -m [filename] "注释"   提交
 
 git log   包含目前版本到修改日志(注释 时间 版本哈希 修改人) 可以带文件名字用以指定查看 
   --pretty=oneline 在一行显示
-git log -p 显示每次提交的内容差异
 git reflog 只包含版本哈希和注释 但是包含了所有的版本(回滚也包含) 可以带文件名字用以指定查看
 
 git status 查看状态(暂存区 提交)    gst
@@ -39,8 +38,6 @@ git branch -d -r [name] 删除远程分支
 git branch -m 123 234 重命名本地123分支为234
 git checkout [name] 切换分支  gco
 git checkout -b [name]  创建新分支并切换
-git checkout -b [name]      name2
-                新分支名    远程分支名
 git merge [name] 合并分支到当前分支
 git stash 暂时隐藏此次工作
 git stash list 查看stash列表
