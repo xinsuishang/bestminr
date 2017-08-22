@@ -36,6 +36,8 @@ git checkout [name] 切换分支  gco
 git checkout -b [name]  创建新分支并切换
 git merge [name] 合并分支到当前分支
 git branch -d [name] 删除分支
+git branch -d -r [name] 删除远程分支
+git branch -m 123 234 重命名本地123分支为234
 git stash 暂时隐藏此次工作
 git stash list 查看stash列表
 git stash apply stash@\{0\}   指定切换到编号为0的stash
