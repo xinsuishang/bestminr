@@ -39,6 +39,7 @@ git branch -d [name] 删除分支
 git branch -m 123 234 重命名本地123分支为234
 git checkout [name] 切换分支  gco
 git checkout -b [name]  创建新分支并切换
+git checkout -b [name] <origin/branch>   拉取远程指定分支
 git merge [name] 合并分支到当前分支
 git stash 暂时隐藏此次工作
 git stash list 查看stash列表
