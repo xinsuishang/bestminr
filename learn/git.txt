@@ -10,6 +10,7 @@ git diff --cached   查看暂存区和版本库的差异
 git diff --staged    同上
 git add [filename]  添加到暂存区，准备提交
 git commit -m [filename] "注释"   提交
+git add -p
 
 git log   包含目前版本到修改日志(注释 时间 版本哈希 修改人) 可以带文件名字用以指定查看 
   --pretty=oneline 在一行显示
@@ -26,16 +27,15 @@ git push -u origin master    将本地内容推送(-u 为指定默认主机并�
 git push --all origin 推送所有分支到远程主机
 git push 省略了远程主分支和本地主分支
 git push --delete origin [name] 删除远程分支 
-git push origin :[name]  同上
 git clone git@server:path/name.git 克隆远程库
 git pull --rebase origin master  合并远程库到本地 冲突时合并代码
 git pull 同上 
 git fetch   pull = fetch + merge
+git fetch -p
 git merge
 git branch  查看分支
 git branch [name] 创建分支
 git branch -d [name] 删除分支
-git branch -d -r [name] 删除远程分支
 git branch -m 123 234 重命名本地123分支为234
 git checkout [name] 切换分支  gco
 git checkout -b [name]  创建新分支并切换
