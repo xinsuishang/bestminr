@@ -30,7 +30,7 @@ git push origin :[name]  同上
 git clone git@server:path/name.git 克隆远程库
 git pull --rebase origin master  合并远程库到本地 冲突时合并代码
 git pull 同上 
-git fetch   pull = getch + merge
+git fetch   pull = fetch + merge
 git merge
 git branch  查看分支
 git branch [name] 创建分支
