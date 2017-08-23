@@ -33,6 +33,8 @@ git pull 同上
 git fetch   pull = fetch + merge
 git fetch -p
 git merge
+git tag -a <version> -m "  "
+git push origin --tags
 git branch  查看分支
 git branch [name] 创建分支
 git branch -d [name] 删除分支
