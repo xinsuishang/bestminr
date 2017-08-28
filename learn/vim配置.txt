@@ -16,3 +16,7 @@ function RunPython3()
     exec "!time python3 %"
   endif
 endfunction
+
+vmap y :w !pbcopy<CR><CR>
+nmap yy :.w !pbcopy<CR><CR>
+nmap p :r !pbpaste<CR><CR>
