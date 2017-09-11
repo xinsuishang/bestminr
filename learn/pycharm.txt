@@ -1,0 +1,5 @@
+查找class  cmd n
+查找文件名 cmd shift n
+查找所在·有 cmd shift f
+进入定义位置 cmd b
+回到刚才位置 cmd alt left
