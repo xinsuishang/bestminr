@@ -28,6 +28,7 @@ git push -u origin master    将本地内容推送(-u 为指定默认主机并�
 git push --all origin 推送所有分支到远程主机
 git push 省略了远程主分支和本地主分支
 git push --delete origin [name] 删除远程分支 
+git remote prune origin 删除远程已不存在，本地git branch -r 还能看到的分支
 git clone git@server:path/name.git 克隆远程库
 git pull --rebase origin master  合并远程库到本地 冲突时合并代码
 git pull 同上 
