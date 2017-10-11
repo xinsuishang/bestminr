@@ -12,6 +12,9 @@ git diff --staged    同上
 git add [filename]  添加到暂存区，准备提交
 git commit -m [filename] "注释"   提交
 git add -p
+git rebase -i branch
+git rebase -i HEAD~n
+git rebase -i hash_id^
 
 git log   包含目前版本到修改日志(注释 时间 版本哈希 修改人) 可以带文件名字用以指定查看 
   --pretty=oneline 在一行显示
