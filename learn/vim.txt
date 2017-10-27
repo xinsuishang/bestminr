@@ -48,6 +48,7 @@ N      反向进行上一次到搜索
 
 n(return) 光标向下移动n行，并移动光标到行首
 ZZ  直接离开(未保存会自动保存)
+:!  暂时退出vi，并执行后面的命令
 :w [filenema]  将文件保存为[filename]
 :r [filename]  读取文件内容到光标所在行之后
 :n1,n2 w [filename] 将n1到n2的内容存储到[filename]文件中
