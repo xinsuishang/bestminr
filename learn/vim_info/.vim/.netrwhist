@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/data/bak/xlms_20180226/etl'
+let g:netrw_dirhist_2='/data/bak/xlms_20180226/etl/mijia'
+let g:netrw_dirhist_3='/data/bak/xlms_20180226/etl/mijia/order_excel'
+let g:netrw_dirhist_4='/data/production/xlms/openapi/tools'

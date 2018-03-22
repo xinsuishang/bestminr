@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -e makefile ]; then
+    make
+else
+    srcnum=`pwd|grep '\/src'|wc -l`
+    if [ $srcnum -eq 1 ];then
+        echo "in src!"
+        prjdir=`pwd|sed 's/\/src.*$//g'`
+    else
+        echo "out src!"
+        prjdir=`echo $1|sed 's/\/src.*$//g'|sed 's/\/\//\//g'`
+    fi
+    echo "Prjdir:" $prjdir
+    cd $prjdir 
+    if [ -d build ]; then
+        cd build
+        #rm CMakeCache.txt
+    else
+        mkdir build
+        cd build
+    fi
+    cmake ../
+    make
+fi
